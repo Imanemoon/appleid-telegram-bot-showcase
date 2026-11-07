@@ -25,7 +25,7 @@
 
   **Status:** Production · actively developed since September 2025 · latest development activity November 2026
 
-  [![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)](docs/ARCHITECTURE.md)
+  [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](docs/ARCHITECTURE.md)
   [![python-telegram-bot](https://img.shields.io/badge/python--telegram--bot-22.8-26A5E4?logo=telegram&logoColor=white)](docs/ARCHITECTURE.md)
   [![Selenium](https://img.shields.io/badge/Selenium-Grid%20in%20Docker-43B02A?logo=selenium&logoColor=white)](docs/ARCHITECTURE.md)
   [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](docs/ARCHITECTURE.md)
@@ -114,11 +114,11 @@ not published.
 
 | Layer | Technology |
 |---|---|
-| Language | Python 3.13 (CI runs the regression subset on 3.12) |
+| Language | Python 3.12.16 (production runtime, verified November 3, 2026) |
 | Bot framework | python-telegram-bot 22.8 — long polling, job queue |
 | Database | MySQL / MariaDB |
 | Browser automation | Selenium + Dockerized Selenium Grid (Chrome), warm session pool |
-| Network | Per-session proxy rotation with health checks |
+| Proxy integration | Optional per-session proxy support in the codebase; disabled in the current production runtime |
 | Reporting | OpenPyXL, pandas |
 | Testing | pytest — 7,193 test functions across 538 test files |
 | CI/CD | GitHub Actions — automated PR validation on every change |
@@ -163,7 +163,7 @@ The full narratives — including the investigation behind each one — are in
 
 - Commits, branches, and file counts come from `git rev-list` / `git ls-tree` on the full `main` history.
 - "Production" = tracked `.py` files that are not test files; "test" = tracked files matching `test_*.py`.
-- Line counts are physical lines (`wc -l`) across all tracked files in each category — no files are excluded, because the repository tracks source, tests, and documentation only (no generated code, vendored dependencies, or binaries).
+- Line counts are physical lines (`wc -l`) across the tracked Python files in each category: production `.py` files and test `test_*.py` files. Non-Python files are not included.
 - Test-function count = occurrences of `def test_` across all tracked test files.
 - Branch count is a historical development-activity metric, not a statement about current branches.
 </details>
