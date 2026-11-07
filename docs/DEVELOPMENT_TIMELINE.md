@@ -67,9 +67,11 @@ phase rather than a continuation of the prior code structure.
 
 ## Project Scale & Verified Metrics
 
-**As of November 7, 2026** — all figures recomputed from the project's `main`
-branch. These are scale measurements of the repository, not indicators of
-quality or complexity on their own.
+**As of November 7, 2026** — recomputed from the project's `main` branch.
+These are general repository-size indicators, not indicators of quality or
+complexity on their own. Testing-specific metrics (test files, test
+functions, and Python line counts) and their methodology live in
+[TESTING_AND_QUALITY.md](TESTING_AND_QUALITY.md).
 
 | Metric | Value |
 |---:|---|
@@ -77,18 +79,10 @@ quality or complexity on their own.
 | Development window | Sep 12, 2025 → Nov 7, 2026 (~14 months) |
 | Remote branches (historical) | 447 |
 | Tracked files | 893 |
-| Python files | 729 — **191 production** + **538 test** |
-| Production Python code | **179,373 lines** |
-| Test code | **175,328 lines** |
-| Test functions | **7,193** |
 | Documentation (Markdown) | 110 files |
-| Latest CI run on main | ✅ success (Nov 7, 2026) |
 
 ### Counting methodology
 
 - Commits, branches, and file counts come from `git rev-list` / `git ls-tree` on the full `main` history.
-- "Production" = tracked `.py` files that are not test files; "test" = tracked files matching `test_*.py`.
-- Line counts are physical lines (`wc -l`) across the tracked Python files in each category: production `.py` files and test `test_*.py` files. Non-Python files are not included.
-- Test-function count = occurrences of `def test_` across all tracked test files — this is a source-pattern count, not a pytest-collected test count.
 - Branch count is a historical development-activity metric, not a statement about current branches.
 

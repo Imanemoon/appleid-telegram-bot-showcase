@@ -9,6 +9,7 @@ independently verified, it is not claimed.
 | Indicator | Value | Method |
 |---|---:|---|
 | Test files | 538 | Tracked files matching `test_*.py` |
+| Production Python files | 191 | Tracked non-test `.py` files |
 | Test functions | 7,193 | Occurrences of `def test_` across tracked test files |
 | Test code size | 175,328 lines | Physical lines across all tracked test files |
 | Production code size | 179,373 lines | Physical lines across all tracked non-test Python files |

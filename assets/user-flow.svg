@@ -48,8 +48,9 @@
   <circle cx="762" cy="104" r="16" fill="url(#fac)"/>
   <text x="762" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">4</text>
   <text x="836" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">System processes</text>
-  <text x="836" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">validate · reserve · pay ·</text>
-  <text x="836" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">automate</text>
+  <text x="836" y="164" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">validate request ·</text>
+  <text x="836" y="182" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">if needed: pay &amp; reserve</text>
+  <text x="836" y="200" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">then automate</text>
   <line x1="938" y1="169" x2="970" y2="169" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#farrow)"/>
 
   <!-- step 5 -->

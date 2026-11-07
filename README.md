@@ -40,7 +40,7 @@ The user interface is fully localized in Persian (Farsi).
 1. Open [t.me/Theappleidbot](https://t.me/Theappleidbot) and tap **Start**.
 2. Pick a service from the menu.
 3. Follow the guided conversation — every step is validated.
-4. The system reserves inventory, checks payment, and runs the automation.
+4. The system validates the request and, where applicable, checks payment and reserves inventory before running the required automation.
 5. Receive the account or clear status updates at every stage.
 
 ## Architecture
@@ -56,7 +56,7 @@ Conceptual walkthrough: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 ## Engineering Highlights
 
 - **Warm browser sessions that stay reliable.** A configuration conflict killed the first pre-warmed browser slot, stretching email checks toward minutes → fixed the conflict, added eager page loads and in-session soft retries, refilled idle slots in the background → dependable warm slots, with a repeatable instrumented bench harness.
-- **Deploy restarts that never race live work.** The restart gate probed signals that were never written, so it could interrupt jobs or skip restarts forever → probe only real runtime signals, exclude orphaned leases, bound the wait with an injected clock → restarts happen only when provably idle, with a forced-restart safety bound.
+- **Deploy restarts that respect active work.** The restart gate probed signals that were never written, so it could interrupt jobs or skip restarts forever → probe only real runtime signals, exclude orphaned leases, bound the wait with an injected clock → restarts wait for genuinely idle conditions; if that wait exceeds a bounded timeout, the restart is forced deliberately so deployments never stall indefinitely.
 - **From hardcoded products to a real catalog.** Every new product type required touching pricing, payment, inventory, and fulfillment paths → persistent per-type catalog, pricing kept with its own authority, fail-closed legacy fallbacks, write-once order snapshots → additive-only schema changes and immutable historical pricing.
 
 Full narratives with investigation details: [docs/ENGINEERING_HIGHLIGHTS.md](docs/ENGINEERING_HIGHLIGHTS.md).
