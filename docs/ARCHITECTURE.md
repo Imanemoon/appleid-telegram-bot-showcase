@@ -18,7 +18,8 @@ flowchart TD
     A --> C["Core Business Logic<br/>(domain authorities)"]
     C --> D[("MySQL Database")]
     A --> B["Browser Automation<br/>(Selenium Grid in Docker, warm session pool)"]
-    B --> P["Optional proxy integration (disabled in production)"]
+    B -.-> P["Optional proxy integration (disabled in production)"]
+    P -.-> W
     P --> W["Apple web services"]
     C --> S["Background Processing<br/>(task dispatchers, schedulers, watchdog)"]
 ```
@@ -44,8 +45,9 @@ scheduled work.
   A warm session pool keeps pre-navigated sessions ready so user-facing operations
   start fast, with background refill, in-session soft retries, and a watchdog for
   process health.
-- **Network isolation.** Each automation session can run through its own proxied
-  connection, with health checks and cleanup of orphaned resources.
+- **Optional proxy integration.** The codebase includes per-session proxy support,
+  health checks, and cleanup of orphaned resources. This integration is currently
+  disabled in the production runtime (verified November 3, 2026).
 - **Background processing.** Task dispatchers, schedulers, and queueing decouple
   long-running automation from the interactive conversation.
 - **Durability.** Conversation workflow state is persisted so interrupted
