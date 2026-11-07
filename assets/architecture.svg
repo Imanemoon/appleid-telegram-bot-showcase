@@ -85,8 +85,8 @@
   <g>
     <rect x="790" y="330" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
     <rect x="790" y="330" width="300" height="4" rx="2" fill="url(#ac)"/>
-    <text x="940" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Per-Session Proxy Rotation</text>
-    <text x="940" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">health-checked network isolation</text>
+    <text x="940" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Proxy Integration</text>
+    <text x="940" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">optional support · disabled in production</text>
   </g>
   <line x1="940" y1="418" x2="940" y2="448" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
 
