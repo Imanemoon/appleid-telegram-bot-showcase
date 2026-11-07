@@ -19,8 +19,7 @@ flowchart TD
     C --> D[("MySQL Database")]
     A --> B["Browser Automation<br/>(Selenium Grid in Docker, warm session pool)"]
     B -.-> P["Optional proxy integration (disabled in production)"]
-    P -.-> W
-    P --> W["Apple web services"]
+    P -.-> W["Apple web services"]
     C --> S["Background Processing<br/>(task dispatchers, schedulers, watchdog)"]
 ```
 
