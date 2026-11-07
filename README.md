@@ -1,4 +1,10 @@
 <div align="center">
+
+  <a href="README.fa.md">🇮🇷 فارسی</a> · <strong>🇬🇧 English</strong>
+
+</div>
+
+<div align="center">
   <img src="assets/banner.svg" alt="Apple ID Telegram Bot — banner" width="100%" />
 
   # Apple ID Telegram Bot
