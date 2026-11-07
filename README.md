@@ -102,7 +102,7 @@ The system is organized as a **layered architecture with enforced dependency
 direction**: a delivery layer (Telegram handlers) on top, an application layer
 coordinating use cases in the middle, and a core of domain authorities owning
 payments, inventory, OTP, catalog, and backup logic — backed by a MySQL database,
-Dockerized browser automation with a warm session pool, per-session proxy rotation,
+Dockerized browser automation with a warm session pool, optional proxy integration (currently disabled in production),
 and background task processing. Operations run on Linux under systemd with
 SOPS-encrypted secrets, daily automated backups, and CI on every change.
 
