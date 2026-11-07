@@ -15,6 +15,18 @@ capability first appears in history.
 | Total commits (main) | 3,748 |
 | Months with commits | 9 of 14 |
 
+```mermaid
+timeline
+    title 14 months of iterative development
+    Sep 2025 : Project begins — first commit Sep 12
+    Sep–Dec 2025 : Core build-out — 2,514 commits : bot workflows, browser automation, session warm pool
+    Jan–Jun 2026 : Commit activity paused
+    Jul 2026 : Architecture overhaul — layered design with domain authorities
+    Aug 2026 : Resource-management engine (flag-gated rollout)
+    Sep–Oct 2026 : Product catalog, warranty pricing, continued hardening
+    Nov 2026 : Production server migration completed : development continues daily
+```
+
 ## Commit activity by month
 
 | Month | Commits | Phase |
@@ -52,3 +64,31 @@ The repository shows no commits between January and June 2026. This is stated
 as what the history shows — a pause in committed work — without speculation
 about causes. Development resumed in July 2026 with an architecture-focused
 phase rather than a continuation of the prior code structure.
+
+## Project Scale & Verified Metrics
+
+**As of November 7, 2026** — all figures recomputed from the project's `main`
+branch. These are scale measurements of the repository, not indicators of
+quality or complexity on their own.
+
+| Metric | Value |
+|---:|---|
+| Total commits (main branch) | **3,748** |
+| Development window | Sep 12, 2025 → Nov 7, 2026 (~14 months) |
+| Remote branches (historical) | 447 |
+| Tracked files | 893 |
+| Python files | 729 — **191 production** + **538 test** |
+| Production Python code | **179,373 lines** |
+| Test code | **175,328 lines** |
+| Test functions | **7,193** |
+| Documentation (Markdown) | 110 files |
+| Latest CI run on main | ✅ success (Nov 7, 2026) |
+
+### Counting methodology
+
+- Commits, branches, and file counts come from `git rev-list` / `git ls-tree` on the full `main` history.
+- "Production" = tracked `.py` files that are not test files; "test" = tracked files matching `test_*.py`.
+- Line counts are physical lines (`wc -l`) across the tracked Python files in each category: production `.py` files and test `test_*.py` files. Non-Python files are not included.
+- Test-function count = occurrences of `def test_` across all tracked test files — this is a source-pattern count, not a pytest-collected test count.
+- Branch count is a historical development-activity metric, not a statement about current branches.
+
