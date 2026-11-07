@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="User journey flowchart">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1026"/>
+      <stop offset="0.6" stop-color="#0F1533"/>
+      <stop offset="1" stop-color="#151040"/>
+    </linearGradient>
+    <linearGradient id="fac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <marker id="farrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B74C7"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#fbg)"/>
+  <text x="600" y="46" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#F2F5FF">How a User Journey Flows</text>
+
+  <!-- step 1 -->
+  <rect x="28" y="104" width="200" height="130" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+  <circle cx="54" cy="104" r="16" fill="url(#fac)"/>
+  <text x="54" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="128" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">Open the bot</text>
+  <text x="128" y="176" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">tap Start on Telegram</text>
+  <line x1="230" y1="169" x2="262" y2="169" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#farrow)"/>
+
+  <!-- step 2 -->
+  <rect x="264" y="104" width="200" height="130" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+  <circle cx="290" cy="104" r="16" fill="url(#fac)"/>
+  <text x="290" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="364" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">Choose a service</text>
+  <text x="364" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">email check · ready account</text>
+  <text x="364" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">custom Apple ID · wallet</text>
+  <line x1="466" y1="169" x2="498" y2="169" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#farrow)"/>
+
+  <!-- step 3 -->
+  <rect x="500" y="104" width="200" height="130" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+  <circle cx="526" cy="104" r="16" fill="url(#fac)"/>
+  <text x="526" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="600" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">Follow the guided</text>
+  <text x="600" y="162" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">conversation</text>
+  <text x="600" y="190" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">clear steps · resumable</text>
+  <line x1="702" y1="169" x2="734" y2="169" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#farrow)"/>
+
+  <!-- step 4 -->
+  <rect x="736" y="104" width="200" height="130" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+  <circle cx="762" cy="104" r="16" fill="url(#fac)"/>
+  <text x="762" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="836" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">System processes</text>
+  <text x="836" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">validate · reserve · pay ·</text>
+  <text x="836" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">automate</text>
+  <line x1="938" y1="169" x2="970" y2="169" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#farrow)"/>
+
+  <!-- step 5 -->
+  <rect x="972" y="104" width="200" height="130" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+  <circle cx="998" cy="104" r="16" fill="url(#fac)"/>
+  <text x="998" y="109" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">5</text>
+  <text x="1072" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16.5" font-weight="700" fill="#EAF0FF">Receive the result</text>
+  <text x="1072" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">delivery or live status</text>
+  <text x="1072" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#93A5CE">updates</text>
+
+  <text x="600" y="272" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#5D6E9C" font-style="italic">Every interaction is a durable, resumable conversation — interrupted steps pick up where they left off.</text>
+</svg>

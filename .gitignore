@@ -1,0 +1,22 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+*.swp
+*~
+.vscode/
+.idea/
+
+# Environment & secrets — must never be committed
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs & temporary files
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="High-level architecture diagram">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1026"/>
+      <stop offset="0.6" stop-color="#0F1533"/>
+      <stop offset="1" stop-color="#151040"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="aglow" cx="0.8" cy="0.05" r="0.6">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="aarrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B74C7"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#abg)"/>
+  <rect width="1200" height="800" fill="url(#aglow)"/>
+
+  <text x="600" y="46" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#F2F5FF">High-Level Architecture</text>
+
+  <!-- ============ left column ============ -->
+  <g>
+    <rect x="70" y="84" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+    <rect x="70" y="84" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="220" y="118" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Telegram Users</text>
+    <text x="220" y="144" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">browse · buy · check · manage</text>
+  </g>
+  <line x1="220" y1="172" x2="220" y2="208" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <rect x="70" y="210" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+    <rect x="70" y="210" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="220" y="244" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Telegram Interface</text>
+    <text x="220" y="270" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">long polling · guided conversations</text>
+  </g>
+  <line x1="220" y1="298" x2="220" y2="328" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <rect x="70" y="330" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+    <rect x="70" y="330" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="220" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Interaction Layer</text>
+    <text x="220" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">conversation handlers · inline keyboards</text>
+  </g>
+  <line x1="370" y1="372" x2="428" y2="372" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <!-- ============ middle column ============ -->
+  <g>
+    <rect x="430" y="330" width="300" height="84" rx="14" fill="#101840" stroke="#35508F" stroke-width="1.4"/>
+    <rect x="430" y="330" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="580" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Application Layer</text>
+    <text x="580" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">use-case orchestration · checkout · fulfillment</text>
+  </g>
+  <line x1="580" y1="418" x2="580" y2="448" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <rect x="430" y="450" width="300" height="84" rx="14" fill="#101840" stroke="#35508F" stroke-width="1.4"/>
+    <rect x="430" y="450" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="580" y="484" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Core Business Logic</text>
+    <text x="580" y="510" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">domain authorities · payments · inventory · OTP · catalog</text>
+  </g>
+  <line x1="580" y1="538" x2="580" y2="566" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <path d="M445 570 h270 a10 10 0 0 1 10 10 v56 a10 10 0 0 1 -10 10 h-270 a10 10 0 0 1 -10 -10 v-56 a10 10 0 0 1 10 -10 z" fill="#0E2A22" stroke="#2F6E55" stroke-width="1.4"/>
+    <ellipse cx="580" cy="570" rx="140" ry="12" fill="#12352A" stroke="#2F6E55" stroke-width="1.4"/>
+    <text x="580" y="618" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">MySQL Database</text>
+    <text x="580" y="640" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#8FB8A5">orders · wallet · inventory · workflow state</text>
+  </g>
+
+  <!-- ============ right column ============ -->
+  <g>
+    <rect x="790" y="210" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+    <rect x="790" y="210" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="940" y="244" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Apple Web Services</text>
+    <text x="940" y="270" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">account flows reached through automation</text>
+  </g>
+  <line x1="940" y1="298" x2="940" y2="328" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)" />
+
+  <g>
+    <rect x="790" y="330" width="300" height="84" rx="14" fill="#0F1636" stroke="#2E3F72" stroke-width="1.4"/>
+    <rect x="790" y="330" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="940" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Per-Session Proxy Rotation</text>
+    <text x="940" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">health-checked network isolation</text>
+  </g>
+  <line x1="940" y1="418" x2="940" y2="448" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <rect x="790" y="450" width="300" height="84" rx="14" fill="#101840" stroke="#35508F" stroke-width="1.4"/>
+    <rect x="790" y="450" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="940" y="484" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Browser Automation</text>
+    <text x="940" y="510" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">Selenium Grid in Docker · warm session pool</text>
+  </g>
+  <line x1="730" y1="492" x2="788" y2="492" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <g>
+    <rect x="790" y="570" width="300" height="84" rx="14" fill="#101840" stroke="#35508F" stroke-width="1.4"/>
+    <rect x="790" y="570" width="300" height="4" rx="2" fill="url(#ac)"/>
+    <text x="940" y="604" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#EAF0FF">Background Processing</text>
+    <text x="940" y="630" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#93A5CE">task dispatchers · schedulers · watchdog</text>
+  </g>
+  <line x1="940" y1="568" x2="940" y2="536" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+  <line x1="790" y1="612" x2="728" y2="612" stroke="#5B74C7" stroke-width="1.6" marker-end="url(#aarrow)"/>
+
+  <!-- ============ infrastructure band ============ -->
+  <rect x="70" y="690" width="1060" height="66" rx="14" fill="#0D1230" stroke="#263463" stroke-width="1.4"/>
+  <text x="600" y="716" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#B9C6EA">Infrastructure &amp; Monitoring</text>
+  <text x="600" y="740" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#7E90BE">systemd services · SOPS-encrypted secrets · daily automated backups · CI on every change · structured logs &amp; metrics counters</text>
+
+  <text x="600" y="784" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#5D6E9C" font-style="italic">Conceptual overview — private implementation details are intentionally omitted.</text>
+</svg>

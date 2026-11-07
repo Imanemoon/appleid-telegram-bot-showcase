@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Apple ID Telegram Bot banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1026"/>
+      <stop offset="0.55" stop-color="#101738"/>
+      <stop offset="1" stop-color="#181242"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#9F7CFF"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.22" cy="0.1" r="0.65">
+      <stop offset="0" stop-color="#4F7CFF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4F7CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.85" cy="0.9" r="0.7">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5B74C7"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#glow1)"/>
+  <rect width="1200" height="320" fill="url(#glow2)"/>
+
+  <!-- subtle dotted grid -->
+  <g fill="#3A4E8F" opacity="0.28">
+    <circle cx="60" cy="60" r="1.6"/><circle cx="120" cy="60" r="1.6"/><circle cx="180" cy="60" r="1.6"/><circle cx="240" cy="60" r="1.6"/>
+    <circle cx="60" cy="120" r="1.6"/><circle cx="120" cy="120" r="1.6"/><circle cx="180" cy="120" r="1.6"/><circle cx="240" cy="120" r="1.6"/>
+    <circle cx="60" cy="180" r="1.6"/><circle cx="120" cy="180" r="1.6"/><circle cx="180" cy="180" r="1.6"/><circle cx="240" cy="180" r="1.6"/>
+    <circle cx="960" cy="240" r="1.6"/><circle cx="1020" cy="240" r="1.6"/><circle cx="1080" cy="240" r="1.6"/><circle cx="1140" cy="240" r="1.6"/>
+    <circle cx="960" cy="60" r="1.6"/><circle cx="1020" cy="60" r="1.6"/><circle cx="1080" cy="60" r="1.6"/><circle cx="1140" cy="60" r="1.6"/>
+  </g>
+
+  <!-- decorative flow line -->
+  <path d="M40 262 C 220 262, 300 292, 480 292 S 900 250, 1160 250" fill="none" stroke="url(#accentSoft)" stroke-width="1.6" opacity="0.35" marker-end="url(#arrow)"/>
+
+  <!-- emblem: rounded square with paper plane -->
+  <g transform="translate(74,96)">
+    <rect x="0" y="0" width="128" height="128" rx="30" fill="#131A3E" stroke="url(#accent)" stroke-width="2.5"/>
+    <g transform="translate(24,26)">
+      <path d="M0 40 L78 6 L64 66 L38 52 L26 62 L27 44 Z" fill="url(#accent)" opacity="0.95"/>
+      <path d="M38 52 L64 66 L54 72 Z" fill="#2A3B6E"/>
+    </g>
+  </g>
+
+  <!-- title block -->
+  <text x="240" y="140" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#F2F5FF">Apple ID Telegram Bot</text>
+  <rect x="243" y="158" width="236" height="4" rx="2" fill="url(#accentSoft)"/>
+  <text x="240" y="200" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" fill="#9FB0D8">Production-grade Apple ID workflows, automated inside Telegram</text>
+  <text x="240" y="232" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#6E80AE" letter-spacing="2.5">AUTOMATION&#160;&#160;·&#160;&#160;PAYMENTS&#160;&#160;·&#160;&#160;INVENTORY&#160;&#160;·&#160;&#160;FULFILLMENT&#160;&#160;·&#160;&#160;RELIABILITY</text>
+</svg>
